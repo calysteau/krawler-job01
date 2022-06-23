@@ -1,4 +1,4 @@
-# krawler-job01 sample
+# krawler-job01
 
 Download a JSON file using __Kalisio krawler__ https://github.com/kalisio/krawler
 
