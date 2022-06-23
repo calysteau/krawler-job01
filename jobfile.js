@@ -11,7 +11,8 @@ export default {
   id: 'codespostaux',
   store: 'mem',
   tasks: [{
-    id: 'codes_postaux_region',
+    store:'file',
+    id: 'codes_postaux_region.geojson',
     type: 'http',
     options: {
         url: 'https://www.calysteau.fr/data/CodesPostauxFrance/codes_postaux_region.geojson'
@@ -22,7 +23,7 @@ export default {
       after: {
         readJson: {
           store: 'mem',
-          match: { id: 'codes_postaux_region' },
+          match: { id: 'codes_postaux_region.geojson' },
           features: true
         }
       }
@@ -30,13 +31,14 @@ export default {
     jobs: {
       before: {
 	  createStores: [
-          { id: 'mem', type: 'memory' }
+          { id: 'mem', type: 'memory' },
+          { id: 'file', type: 'fs', options: { path: __dirname } }
         ]
       },
       after: {
         writeJson: { store: 'mem' },
         clearOutputs: {},
-        removeStores: ['mem']
+        removeStores: ['mem', 'file']
       }
     }
   }
