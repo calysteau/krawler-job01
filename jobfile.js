@@ -22,7 +22,6 @@ export default {
     tasks: {
       after: {
         readJson: {
-          store: 'mem',
           match: { id: 'codes_postaux_region.geojson' },
           features: true
         }
