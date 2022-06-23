@@ -1,6 +1,6 @@
 # krawler-job01
 
-Download a JSON file using __Kalisio krawler__ https://github.com/kalisio/krawler
+Download a JSON file using __Kalisio Krawler__ https://github.com/kalisio/krawler
 
 ## Installation de l'environnement
 
