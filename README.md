@@ -53,5 +53,5 @@ set DEBUG= krawler*   (pour CMD)
 ```
 ou 
 ```bash
-$env:DEBUG="krawler*"  (pour PoweShell)
+$env:DEBUG="krawler*"  (pour PowerShell)
 ```
