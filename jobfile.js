@@ -1,4 +1,3 @@
-import { hooks } from '@kalisio/krawler'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
