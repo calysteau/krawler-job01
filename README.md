@@ -2,24 +2,24 @@
 
 Download a JSON file using __Kalisio Krawler__ https://github.com/kalisio/krawler
 
-## Installation de l'environnement
+## Setting up the environment
 
-### Installation de git
-Télécharger à partir de : https://git-scm.com
+### git install
+Download : https://git-scm.com
 
-### Installation nvm
-Télécharger à partir de : https://github.com/coreybutler/nvm-windows
+### nvm install
+Download : https://github.com/coreybutler/nvm-windows
 
 ```bash
 nvm install 16
 nvm use 16.15.1
 ```
 
-### Installation yarn
+### yarn install
 Télécharger à partir de : https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
-## Installation de Krawler
-Dans le répertoire de travail (ex : c:\workspace), créer un répertoire kalisio
+## Krawler install
+In the working directory (e.g. c:\workspace), create a kalisio directory
 
 ```bash
 cd c:\workspace\kalisio
@@ -29,8 +29,8 @@ yarn install
 yarn link
 ```
 
-## Installation du job01
-Dans le répertoire kalisio ( ex: C:\workspace\kalisio)
+## job01 install
+In the kalisio directory ( ex: C:\workspace\kalisio)
 
 ```bash
 git clone https://github.com/calysteau/krawler-job01
@@ -39,19 +39,19 @@ yarn install
 yarn link @kalisio/krawler
 ```
 
-Lancer le job
+Run the job
 ```bash
 krawler jobfile.js
 ```
 
-## Remarques
+## Notes
 
-Si besoin d'activer le DEBUG de Krawler
+If you need to activate the Krawler DEBUG
 
 ```bash
 set DEBUG= krawler*   (pour CMD)
 ```
-ou 
+or 
 ```bash
 $env:DEBUG="krawler*"  (pour PowerShell)
 ```
