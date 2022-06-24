@@ -16,7 +16,7 @@ nvm use 16.15.1
 ```
 
 ### yarn install
-Télécharger à partir de : https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
+Download : https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
 ## Krawler install
 In the working directory (e.g. c:\workspace), create a kalisio directory
